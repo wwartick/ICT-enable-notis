@@ -1,4 +1,130 @@
 body{
-    background-color: grey;
+    background-color: #875C74;
     min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.top-container{
+    display: flex;
+    justify-content: space-around;
+    background-color: #54414E;
+    color: #C5EBC3;
+    padding: 2rem 1rem;
+    gap: 1rem;
+    height: 5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px 1px #2e242b;
+
+    &>ion-icon{
+        font-size: 4rem;
+        color: gold;
+    }
+}
+
+.middle-container{
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    gap: 10px;
+
+    &>span{
+        font-size: 1.2rem;
+    }
+}
+
+.button-container{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    font-size: .75rem;
+    gap: 10px;
+
+    >span{
+        font-size: .75rem;
+    }
+
+    >span:hover{
+        cursor: pointer;
+        color: #B7C8B5;
+    }
+    >button{
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        background-color: #A790A5;
+        color: #C5EBC3;
+        padding: 4px 1rem;
+        transition: all 200ms linear;
+
+        &:hover{
+            cursor: pointer;
+            background-color: #875C74;
+            color: white;
+            scale: 1.1;
+        }
+
+        &:active{
+            scale: .9;
+        }
+    }
+}
+
+.x{
+    opacity: .5;
+    font-size: 1.25rem;
+    align-self: flex-start;
+    user-select: none;
+    margin-top: -1.5rem;
+
+    &:hover{
+        cursor: pointer;
+        color: rgb(238, 13, 13)
+    }
+}
+
+.bottom-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 12rem;
+    background-color: white;
+    gap: 1rem;;
+    padding: 2rem 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 1px rgb(53, 52, 52);
+
+    >.x{
+        align-self: flex-end;
+        margin-right: 1rem;
+    }
+
+    >span:nth-child(3){
+        font-size: 1.25rem;
+        text-align: center;
+        width: 75%;
+        color: #54414E;
+        font-weight: 800;
+    }
+}
+
+#learn{
+    color: #54414E;
+}
+
+img{
+    height: 5rem;
+    width: 5rem;
+}
+
+
+
+
+
